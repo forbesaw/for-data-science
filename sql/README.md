@@ -1,4 +1,4 @@
-### Formatting Conventions For SQL
+# Formatting Conventions For SQL
 
 While SQL does not need to be formatted for it to run, we need other people to read it. Consistency is key for this to work and these conventions are designed to be readable & simple to execute. Consider these strong guidelines so that we all can read each others’ queries.
 
@@ -34,7 +34,7 @@ Prefix notation is still valid, use a comma before the alias to make it easy to 
   ...
 ````
 
-# Whitespace 
+### Whitespace 
 2 space indents 
 NO hanging indents:
 ```
@@ -64,7 +64,7 @@ func
 )
 ```
 
-# General Query Structure 
+### General Query Structure 
 This should be the general structure of your queries:
 ```
 SELECT
@@ -91,7 +91,7 @@ func(
   , arg2
 )
 ```
-# Collapsed Query Structure
+### Collapsed Query Structure
 Optionally, if there are VERY FEW (one) “argument” in these clauses, you may abbreviate them like so:
 ```
 SELECT my_table.foo
@@ -103,7 +103,7 @@ GROUP BY my_table.lorem 
 ORDER BY ...  
 LIMIT 10
 ```
-# Subqueries
+### Subqueries
 Use subqueries to isolate data & logic pulled from specific sources. Name your subqueries in an explanatory fashion. Good practice is to add a comment explaining the subquery when the name is not sufficient:
 ```
 SELECT
@@ -123,7 +123,7 @@ ON
   AND ...  
 ...
 ```
-# Nested Expressions
+### Nested Expressions
 Use non-hanging indents to add nested expressions:
 ```
 WHERE 
@@ -143,7 +143,7 @@ CASE
   ELSE 4
 END
 ```
-# Collapsed Case
+### Collapsed Case
 If each clause fits on one short line (usually just one argument), the CASE may be collapsed:
 ```
 CASE WHEN 1=1 THEN 2 ELSE 3 END 
@@ -158,7 +158,7 @@ or
 GROUP BY 
   1, 2, 3, 4 
   ```
-# Grouping and Query Grains
+### Grouping and Query Grains
 Aggregate sooner, join later 
 
 This is a query smell:
@@ -201,7 +201,7 @@ No GROUP BY at the final query level (after any subqueries or WITH statements)
 All joins should be 1:1 for INNER JOINS, or 1:1 or 1:0 FOR LEFT JOINS.
 Join sequences matter. Pay extra attention to join sequence and evaluate if a full join is needed.
 
-# Comments
+### Comments
 Single line:
 ```
 -- this is a single line comment 
@@ -215,10 +215,10 @@ Multi-line:
   comment 
 */
 ```
-# Naming Conventions
+### Naming Conventions
 Commonly used fields should be named similarly 
 
-# Dates
+### Dates
 Use ds (short for datestamp) 
 Avoid dt (ambiguous for datetimes) 
 Timestamps:
