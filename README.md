@@ -1,4 +1,5 @@
-# for-date-science
+# For Date Science
+
 ## Data science projects to develop skills in full-stack data science
 
 ### Coding projects: 
