@@ -6,12 +6,12 @@ TODO: format this page and scrape
 
 ## Conventions
 Capitalize SQL Keywords; everything else should be lowercase
-Aliasing & naming 
-To name an expression or subquery use AS
-To name a table do NOT use AS  
-Table alias may be short, but should suggest the original table; avoid single letter names if they are ambiguous or unclear. E.g., mongodb.users u (GOOD) vs mongodb.users t1 (BAD)
-Reference source table if there is more than one source
-Prefix notation whenever possible
+### Aliasing & naming 
+- To name an expression or subquery use AS
+- To name a table do NOT use AS  
+- Table alias may be short, but should suggest the original table; avoid single letter names if they are ambiguous or unclear. E.g., mongodb.users u (GOOD) vs mongodb.users t1 (BAD)
+- Reference source table if there is more than one source
+- Prefix notation whenever possible
 
 Including commas:
 ```
@@ -24,7 +24,7 @@ source_table.source_column1 AS col_alias1,
 source_table.source_column2 AS col_alias2,
 ```
  
-# Modularize judiciously (WITH statements vs SUBQUERIES)
+### Modularize judiciously (WITH statements vs SUBQUERIES)
 
 Use WITH statements for complex queries; for simple queries use SUBQUERIES to avoid indirection
 Definitely use a WITH if you’re referencing the subquery more than once
