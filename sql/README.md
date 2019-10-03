@@ -226,5 +226,5 @@ Commonly used fields should be named similarly 
 
 - Use `ds` (short for datestamp) 
 - Avoid `dt` (ambiguous for datetimes) 
-### Timestamps:
+### Timestamps
 - Use `ts` (short for timestamp) 
