@@ -2,10 +2,9 @@
 
 While SQL does not need to be formatted for it to run, we need other people to read it. Consistency is key for this to work and these conventions are designed to be readable & simple to execute. Consider these strong guidelines so that we all can read each others’ queries.
 
-TODO: format this page and scrape 
-
 ## Conventions
-Capitalize SQL Keywords; everything else should be lowercase
+Capitalize SQL Keywords; everything else should be lowercase.
+
 ### Aliasing & naming 
 - To name an expression or subquery use AS
 - To name a table do NOT use AS  
@@ -205,6 +204,7 @@ All joins should be 1:1 for INNER JOINS, or 1:1 or 1:0 FOR LEFT JOINS.
 Join sequences matter. Pay extra attention to join sequence and evaluate if a full join is needed.
 
 ### Comments
+
 Single line:
 ```
 -- this is a single line comment 
@@ -219,10 +219,12 @@ Multi-line:
 */
 ```
 ### Naming Conventions
+
 Commonly used fields should be named similarly 
 
 ### Dates
-Use ds (short for datestamp) 
-Avoid dt (ambiguous for datetimes) 
-Timestamps:
-Use ts (short for timestamp) 
+
+- Use `ds` (short for datestamp) 
+- Avoid `dt` (ambiguous for datetimes) 
+### Timestamps:
+- Use `ts` (short for timestamp) 
