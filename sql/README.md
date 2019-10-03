@@ -8,7 +8,7 @@ Capitalize SQL Keywords; everything else should be lowercase.
 ### Aliasing & naming 
 - To name an expression or subquery use AS
 - To name a table do NOT use AS  
-- Table alias may be short, but should suggest the original table; avoid single letter names if they are ambiguous or unclear. E.g., mongodb.users u :EMOJICODE: vs mongodb.users t1 :EMOJICODE:
+- Table alias may be short, but should suggest the original table; avoid single letter names if they are ambiguous or unclear. E.g., mongodb.users u :+1: vs mongodb.users t1 :-1:
 - Reference source table if there is more than one source
 - Prefix notation whenever possible
 
