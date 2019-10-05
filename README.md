@@ -3,8 +3,9 @@
 ## Data science projects to develop skills in full-stack data science
 
 ### Coding projects: 
-- SQL formatting guide
+- SQL formatting guide [x]
 - Python extractor for public bank data with viz (possibly on MySQL server?) 
+- Local Warehouse API for quering data above (possibly with simple time series graph?
 - Home automations - automating simple tasks storing and refreshing libraries, etc
 - Web scraper for real estate listings by geographic region
 - Building a simple neural network 
