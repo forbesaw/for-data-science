@@ -1,5 +1,5 @@
 import pandas
-data = pandas.read_csv("/Users/aaronforbes/for-date-science/raw_data/fiscal_decentralization/time_series.csv", delimiter = ',')
+data = pandas.read_stata("/Users/aaronforbes/for-date-science/raw_data/fiscal_decentralization/time_series.csv", delimiter = ',')
 new_data = data.rename(columns = {"Country Name":"country_name", ## easier to read
                               "Country Code": "country_code",
                                   "Indicator Name": "indicator_name",
