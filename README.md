@@ -11,3 +11,4 @@
 - [ ] Building a simple neural network 
 - [ ] Cryptocurrency / blockchain oriented data science project? https://www.dataoptimal.com/data-science-projects-2018/
 - [ ] Use beautiful soup to scraping, historical price trends on different sites?
+- cli use and shortcut guide
